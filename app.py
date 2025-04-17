@@ -5,6 +5,11 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import numpy as np
 import nltk
+from scipy.sparse import hstack
+from sklearn.feature_extraction.text import TfidfVectorizer
+from xgboost import XGBClassifier
+from scipy.sparse import hstack
+
 nltk.download('stopwords')
 nltk.download('wordnet')
 
