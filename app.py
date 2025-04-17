@@ -58,7 +58,7 @@ if st.button("Predict"):
         data_combined = hstack([data_tfidf, additional_features])
 
         prediction = model.predict(data_combined)[0]
-        if prediction == 1:
+        if prediction == 0:
             st.success("✅ This is NOT spam.")
         else:
             st.error("🚨 This is SPAM!")
