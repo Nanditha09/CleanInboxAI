@@ -59,6 +59,7 @@ if st.button("Predict"):
 
         prediction = model.predict(data_combined)[0]
         if prediction == 1:
-            st.error("🚨 This is SPAM!")
-        else:
             st.success("✅ This is NOT spam.")
+        else:
+            st.error("🚨 This is SPAM!")
+            
