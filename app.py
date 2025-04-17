@@ -5,8 +5,9 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import nltk
 
-# Download the 'stopwords' resource
+# Download necessary NLTK data files
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 
 # Load trained model and vectorizer
