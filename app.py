@@ -4,6 +4,9 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import numpy as np
+import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 # Load trained model and vectorizer
 model = joblib.load('xgb_spam_model.pkl')
